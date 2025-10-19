@@ -131,7 +131,6 @@ class BaseMCPChatBot(ABC):
                             }
                         }
 
-                        # isErrorフィールドを追加（Claude 3モデルでサポート）
                         if tool_result.isError:
                             tool_result_block["toolResult"]["status"] = "error"
 
