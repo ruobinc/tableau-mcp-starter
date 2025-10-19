@@ -5,12 +5,17 @@ Streamable HTTPトランスポートを使用してMCPサーバーに接続す�
 """
 
 import asyncio
+import logging
 
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 
 from config.config import BedrockConfig, TableauMCPHttpConfig
 from bedrock.mcp_chatbot_base import BaseMCPChatBot
+
+# MCPライブラリのWARNINGログを抑制
+logging.getLogger("mcp").setLevel(logging.ERROR)
+logging.getLogger().setLevel(logging.ERROR)
 
 
 class MCPChatBotHTTP(BaseMCPChatBot):

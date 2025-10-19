@@ -5,12 +5,17 @@ stdioトランスポートを使用してMCPサーバーに接続する。
 """
 
 import asyncio
+import logging
 
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 from config.config import BedrockConfig, TableauMCPStdioConfig
 from bedrock.mcp_chatbot_base import BaseMCPChatBot
+
+# MCPライブラリのWARNINGログを抑制
+logging.getLogger("mcp").setLevel(logging.ERROR)
+logging.getLogger().setLevel(logging.ERROR)
 
 
 class MCPChatBotStdio(BaseMCPChatBot):
