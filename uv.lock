@@ -580,7 +580,7 @@ wheels = [
 ]
 
 [[package]]
-name = "tableau-mcp-chatbot"
+name = "tableau-mcp-starter"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

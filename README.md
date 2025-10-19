@@ -2,6 +2,15 @@
 
 [Tableau MCP](https://github.com/tableau/tableau-mcp)を使用した会話Botのテンプレートです。
 
+
+## 実行例
+
+![Tableau MCP実行例](public/samples.png)
+
+上記の例では、「サンプル - スーパーストア」データソースに対してフィールド情報の取得やデータの集計を行っています。
+
+
+
 ## プロジェクト構成
 
 ```
@@ -48,3 +57,5 @@ uv run python bedrock/mcp_chatbot_stdio.py
 **操作方法:**
 - プロンプトで質問を入力（例：「私が見れるTableauのワークブックとビューの一覧を教えてください」）
 - `quit`または`exit`で終了
+
+
