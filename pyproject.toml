@@ -1,7 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
-name = "tableau-mcp-chatbot"
+name = "tableau-mcp-starter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Tableau MCPを使用した会話Botのテンプレート"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -15,3 +19,6 @@ dependencies = [
 dev = [
     "ruff>=0.14.1",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["bedrock", "config"]

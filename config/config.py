@@ -117,4 +117,5 @@ class TableauMCPStdioConfig:
             "CONNECTED_APP_SECRET_ID": self.tableau_connected_app_secret_id,
             "CONNECTED_APP_SECRET_VALUE": self.tableau_connected_app_secret_value,
             "EXCLUDE_TOOLS": "",
+            "DEFAULT_LOG_LEVEL": "INFO",
         }
